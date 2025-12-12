@@ -56,10 +56,11 @@ Plataforma de streaming distribuído:
 
 ## 📖 Como Usar Este Repositório
 
-1. Navegue pelos diretórios de cada tópico
-2. Leia a documentação teórica em cada README
-3. Estude os exemplos de código fornecidos
-4. Pratique implementando os conceitos aprendidos
+1. **Comece pelo [Guia de Aprendizado](./LEARNING-PATH.md)** - Trilha estruturada com cronograma sugerido
+2. **Navegue pelos tópicos** - Cada diretório contém teoria e prática
+3. **Estude os exemplos** - Código prático em cada pasta `examples/`
+4. **Faça os exercícios** - Desafios práticos para fixar o conhecimento
+5. **Consulte recursos adicionais** - Veja [RESOURCES.md](./RESOURCES.md) para materiais complementares
 
 ## 🚀 Pré-requisitos
 
@@ -71,10 +72,18 @@ Plataforma de streaming distribuído:
 ## 📝 Estrutura de Cada Tópico
 
 Cada tópico contém:
-- **README.md**: Documentação teórica e conceitos
-- **examples/**: Exemplos de código práticos
-- **exercises/**: Exercícios para prática
-- **resources/**: Links e referências adicionais
+- **README.md**: Documentação teórica completa com exemplos
+- **examples/**: Exemplos de código práticos e executáveis
+- **exercises/**: Desafios e exercícios para praticar (quando aplicável)
+- **resources/**: Links e referências adicionais (quando aplicável)
+
+## 🎓 Recursos Adicionais
+
+- **[Guia de Aprendizado](./LEARNING-PATH.md)**: Trilha estruturada de estudos (3-6 meses)
+- **[Recursos Complementares](./RESOURCES.md)**: Livros, cursos, sites, comunidades
+- **[Exercícios SOLID](./01-solid/EXERCISES.md)**: 7 desafios práticos
+- **[API REST com Quarkus](./04-quarkus/examples/QUARKUS-API-EXAMPLE.md)**: Exemplo completo
+- **[Sistema com Kafka](./05-kafka/examples/ORDER-SYSTEM-EXAMPLE.md)**: Microservices com eventos
 
 ## 🤝 Contribuindo
 
