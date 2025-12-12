@@ -33,12 +33,21 @@ class UserServiceBad {
 
 // SRP: Cada classe tem uma única responsabilidade
 class UserValidator {
+    // Simple email validation pattern
+    // For production, consider using javax.mail.internet.AddressValidator
+    // or Apache Commons Validator
+    private static final String EMAIL_PATTERN = 
+        "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+    
     public void validate(User user) {
         if (user.getName() == null || user.getName().isEmpty()) {
             throw new IllegalArgumentException("Nome inválido");
         }
-        if (!user.getEmail().contains("@")) {
+        if (user.getEmail() == null || !user.getEmail().matches(EMAIL_PATTERN)) {
             throw new IllegalArgumentException("Email inválido");
+        }
+        if (user.getPassword() == null || user.getPassword().length() < 6) {
+            throw new IllegalArgumentException("Senha deve ter no mínimo 6 caracteres");
         }
     }
 }

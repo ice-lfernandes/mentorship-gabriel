@@ -420,6 +420,8 @@ quarkus.datasource.password=postgres
 quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/products_db
 
 # Hibernate
+# WARNING: Only use 'drop-and-create' in DEVELOPMENT!
+# For production, use 'validate' or 'none'
 quarkus.hibernate-orm.database.generation=drop-and-create
 quarkus.hibernate-orm.log.sql=true
 
@@ -428,6 +430,10 @@ quarkus.http.port=8080
 
 # Dev Services (banco de dados automático em dev)
 quarkus.devservices.enabled=true
+
+# Production profile example
+%prod.quarkus.hibernate-orm.database.generation=validate
+%prod.quarkus.hibernate-orm.log.sql=false
 ```
 
 ## 9. Teste
