@@ -1,0 +1,46 @@
+# Java / Maven / Gradle
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+.gradle/
+*.iml
+*.ipr
+*.iws
+
+# IDE
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if using frontend)
+node_modules/
+dist/
+.cache/
+
+# Quarkus
+.quarkus/
+
+# Environment
+.env
+.env.local
